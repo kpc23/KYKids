@@ -1,8 +1,38 @@
 body{
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    background-image: url("/imgs/HeartofKYWebLogo.jpg");
+    position: relative;
 }
 
 body *
 {
     border:1px solid black; 
 }
+
+/**/
+
+html{
+    font-size: 16pt;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    left:0px;
+    top:0px;
+    text-align: right;
+    transition: opacity .5s,padding-left .125s;
+    width: 100%;
+    z-index: 20;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
