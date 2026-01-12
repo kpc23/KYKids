@@ -1,15 +1,27 @@
+html{
+    overflow-x: hidden; /* Hides horizontal scrollbar if content is slightly too wide */
+    /* aided with ensuring the body and header aligned with windows borders and
+    there was a right-sided gap that revealed the underlying hear image.*/
+}
 body{
-    display: table;
+    display: flex;
     background-color: white;
     background-position: center center;
     flex-direction: column;
     background-image: url("/imgs/HeartofKYWebLogo.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    
+    flex-wrap: wrap;
     transform:translate3d(0,0,0);
     background-attachment: fixed;
-
+    box-sizing: border-box;
+    /* width: 600px; */
+        width: 100%; /* Default to full width */
+    overflow-x: hidden; /* Hides horizontal scrollbar if content is slightly too wide */
+    min-height: 100vh; /* Ensures the body is at least as tall as the window, but grows with content */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Essential for predictable sizing */
 }
 
 body *
@@ -17,11 +29,6 @@ body *
     
     /* border:1px solid black;  */
 }
-
-
-
-
-/**/
 
 .logo{
     display:none;
@@ -41,74 +48,146 @@ header{
 
 h1.title{
     display: flex;
-    /* padding-left: 48px;
-    padding-right: 48px; */
     color: white;
     justify-content: center;
     font-size: 40pt;
     padding-top:200px;
 }
+h1{
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
 nav{
     background-color: rgba(28, 28, 28, 1);
-
     display: flex;
-    
     position: fixed;
     top:0px;
     text-align: right;
-    /* background-color: transparent; */
-    /* transition: background-color 1s linear; */
-    transition: opacity .5s, padding-left .125s;
-    /* background-image:linear-gradient(to bottom transparent 0%, black); */
     width: 100%;
-    z-index: 20;
     justify-content: end;
-    /* from{background-color: transparent;}
-    to{background-color: black;} */
-
 }
 
-/* nav.scrolled{
-    background-color: black;
+/*
+links for navigation bar are white
+*/
+nav > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
 
-
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-} */
 
 li{
     display: table;
     padding-left:16px;
     padding-right:10px;
-   
-    
-
 }
+
 ul{
     display: flex;
     flex-direction: row;
-    align-content: space-between;
-    
-}
-a{
-    color:white;
-    text-decoration: none;
+    align-content: space-between; 
 }
 
 aside{
-    display: table;
-    position: relative;
-    table-layout: fixed;
-    background-color: black;
-    width: 100%;
-    background-size: cover;/*doesnt do anything*/
+    display: flex;
+    padding-top:1.5rem;
+    background-color: white;
+    justify-content: center;
 }
 
+a.social:first-child{
+    display: flex;
+    background-color: #1877f2;
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+    margin:2px;
+}
+
+a.social:last-child{
+    display: flex;
+    background-color: #fe005c;;
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+    margin:2px;
+}
 
 
 main{
+    display: flex;
+    flex-direction: column;
+    color:rgba(0, 114, 153, 1);
+    font-family: Raleway;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
     background-color: white;
-
+    text-align: center;
+    flex-wrap: wrap;
 }
 
+main *{
+    color:rgba(0, 114, 153, 1);
+}
+
+h2{
+    text-align: center;
+}
+.note{
+    text-align: center;
+}
+ #programs
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    text-align: left;
+
+
+}
+.imgdiv img{
+    width: 300px;    
+    height: auto; /* Maintains aspect ratio */
+
+}
+.imggroup.long{
+    width: 300px;
+}
+
+.imgdiv
+{
+    /* background-color: red; */
+    display: flex;
+    
+}
+
+div.imgwrapper{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:100px;
+    max-width: 100%;
+    
+
+}
+div.video iframe
+{
+    width: 300px;
+    height: 400px;
+}
+div.imgdiv{
+    display: flex;
+    justify-content: center;
+    /* max-width: 100%; */
+
+}
+    
+#dolly{
+    gap:10px;
+}
 
