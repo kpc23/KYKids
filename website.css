@@ -103,7 +103,7 @@ p{
     color: black;
     text-align: left;
     font-weight: lighter;
-    font-size: 22.0pt;
+    font-size: 14pt;
     line-height: 1.5;
 
 }
@@ -169,7 +169,7 @@ h2{
     color:rgba(0, 114, 153, 1);
     text-align: left;
     line-height: 1.5;
-    font-size: 20;
+    font-size: 20pt;
 }
 div{
         color:black;
@@ -198,8 +198,8 @@ div{
 /*Controls the aesthetics of all links in specific pages only*/
 #childcare .links a, 
 #support .links a, 
-#activities .links a, 
-#preschool .links a{ 
+#activities .links a
+{ 
     display:block;
     background-color: rgba(0, 114, 153, 1);
     color: rgba(249, 249, 249, 1);
@@ -274,21 +274,11 @@ div li
     text-align: left;
 }
 
-/* 
-#ready4k{
-    width:40%
-}
-
-#Dolly{
-    width:40%
-} */
-
 .imggroup.short{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    /* background-color: maroon; */
     width: 500px;
 
 }
@@ -299,10 +289,7 @@ div li
     gap:50px;
     text-align: center;
     color:black;
-    /* background-color: wheat ; */
 }
-
-
 
 #kidAdventures{
     display: flex;   
@@ -322,11 +309,7 @@ section{
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
-section p{
-    font-size: 16px;
-    text-align: left;
 
-}
 section#funding{
     text-align: left;
     font-weight: lighter;
@@ -350,7 +333,17 @@ h3, address{
     margin-bottom: 0px;
 }
 
-/*Childcare Page*/
+/**** CHILDCARE PAGE ******/
+
+#childcare.h2
+{
+   font-size: 20pt;
+}
+#childcare li a
+{
+    justify-content: center;
+}
+
 #childcare div.imgwrapper
 {
     display: flex;
@@ -384,10 +377,11 @@ width:100%;
 gap: 20px;
 align-items: center;
 }
-/********************************/
+/**********END CHILDCARE PAGE**********************/
 
-/* ConcernsPageWork */
+/******** ConcernsPageWork ********/
 /* This controls that list under the What do i do caption */
+
 body#concerns{
     font-size: 14pt;
     line-height: 1.5;
@@ -395,16 +389,16 @@ body#concerns{
 }
 body#concerns main section ul
 {
-display: flex;
-flex-direction: column;
-/* background-color: #fe005c; */
-text-align: left;
-text-wrap: wrap;
-list-style: square;
-color: black;
-font-weight: lighter;
-        padding-left: 2.5%;
-        padding-right: 2.5%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fe005c; */
+    text-align: left;
+    text-wrap: wrap;
+    list-style: square;
+    color: black;
+    font-weight: lighter;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 body#concerns main section p:nth-last-child(1) {
@@ -439,7 +433,6 @@ section#AddressConcerns div.phone a{
     color:black;
     font-size: 14pt;
     text-decoration: none;
-
 }
 section#AddressConcerns div p{
     font-size: 14pt;
@@ -455,3 +448,21 @@ section#AddressConcerns div.phone{
 section#AddressConcerns{
     margin-bottom:24px;
 }
+/*************************************/
+
+/***************Preschool*************/
+
+body#preschool .imggroup.short p{
+    text-align: center;
+}
+body#preschool .imggroup.short .links a{
+    color:rgba(0, 114, 153, 1);
+    font-weight: normal;
+
+}
+body#preschool .imggroup.short div.phone a{
+    color:black;
+    text-decoration: none;
+    font-weight: normal;
+}
+/************End of Pre-S pg************/
