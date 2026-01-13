@@ -69,16 +69,17 @@ nav{
     justify-content: end;
 }
 
+
 /*
 links for navigation bar are white
 */
-nav > ul > li > a{
+nav a{
     color: white;
     text-decoration: none;
 }
 
 
-li{
+nav li{
     display: table;
     padding-left:16px;
     padding-right:10px;
@@ -129,26 +130,21 @@ main{
     flex-wrap: wrap;
 }
 
+
+
 main *{
-    color:rgba(0, 114, 153, 1);
+    
+    text-align: center;
 }
 
 h2{
+    color:rgbba(0, 114, 153, 1);
     text-align: center;
 }
 .note{
     text-align: center;
 }
- #programs
-{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap:50px;
-    text-align: left;
 
-
-}
 .imgdiv img{
     width: 300px;    
     height: auto; /* Maintains aspect ratio */
@@ -171,8 +167,8 @@ div.imgwrapper{
     flex-wrap: wrap;
     justify-content: center;
     gap:100px;
-    max-width: 100%;
-    
+    max-width: 200%;
+   
 
 }
 div.video iframe
@@ -183,11 +179,84 @@ div.video iframe
 div.imgdiv{
     display: flex;
     justify-content: center;
-    /* max-width: 100%; */
 
 }
     
+
 #dolly{
     gap:10px;
 }
 
+#imgwrapper
+{
+    background-color: aquamarine;
+    
+
+}
+
+div.imgwrapper div.links ul 
+{
+
+    display: inline-block;
+    text-decoration: none;
+}
+
+div li 
+{   
+    display: flex;
+    text-decoration: none;
+    padding-bottom:10px;
+}
+
+ #programs
+{
+    
+    display: flex;
+    flex-direction: column;
+
+    gap:50px;
+    text-align: left;
+    background-color: aliceblue;
+
+
+}
+/* 
+#ready4k{
+    width:40%
+}
+
+#Dolly{
+    width:40%
+} */
+
+.imggroup.short{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: maroon; */
+    width: 500px;
+
+}
+#kids-and-parents
+{
+    
+    display: table;
+    
+    gap:50px;
+    text-align: center;
+    /* background-color: wheat ; */
+    
+}
+
+
+
+#kidAdventures{
+    display: flex;
+    
+   
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+
+}
