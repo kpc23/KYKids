@@ -26,8 +26,7 @@ body{
 
 body *
 {
-    
-    /* border:1px solid black;  */
+    border:1px solid transparent; 
 }
 
 .logo{
@@ -64,6 +63,7 @@ nav{
     display: flex;
     position: fixed;
     top:0px;
+    left: 0px;
     text-align: right;
     width: 100%;
     justify-content: end;
@@ -85,6 +85,33 @@ nav li{
     padding-right:10px;
 }
 
+/******Home pg note at start******/
+div#inspiration{
+    display: flex; 
+    justify-content: center;
+}
+div#inspiration p{
+    color: rgba(0, 114, 153, 1);
+    font-weight: bold;
+    text-align: center;
+    width: 500px;
+}
+/**********************************/
+
+/*<p> alignment/color*/
+p{
+    color: black;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 22.0pt;
+    line-height: 1.5;
+
+}
+
+/*links within <p>*/
+p a{
+    color: rgba(0, 114, 153, 1);
+}
 ul{
     display: flex;
     flex-direction: row;
@@ -98,6 +125,7 @@ aside{
     justify-content: center;
 }
 
+/*Logo for fb*/
 a.social:first-child{
     display: flex;
     background-color: #1877f2;
@@ -106,7 +134,7 @@ a.social:first-child{
     height: 44px;
     margin:2px;
 }
-
+/*Logo for insta*/
 a.social:last-child{
     display: flex;
     background-color: #fe005c;;
@@ -116,12 +144,11 @@ a.social:last-child{
     margin:2px;
 }
 
-
 main{
     display: flex;
     flex-direction: column;
     color:rgba(0, 114, 153, 1);
-    font-family: Raleway;
+    font-family: sans-serif;
     font-weight: 600;
     font-style: normal;
     font-variant: normal;
@@ -132,17 +159,28 @@ main{
 
 
 
-main *{
+/* main *{
     
     text-align: center;
+} */
+
+/*Realigning headers of subsections/body to be left and adjust font size.*/
+h2{
+    color:rgba(0, 114, 153, 1);
+    text-align: left;
+    line-height: 1.5;
+    font-size: 20;
+}
+div{
+        color:black;
+
 }
 
-h2{
-    color:rgbba(0, 114, 153, 1);
-    text-align: center;
-}
+/*Activies page - Note <p> below Dolly's section*/
 .note{
-    text-align: center;
+    text-align: left;
+    font-size: 22px;
+    color: rgba(0, 114, 153, 1);
 }
 
 .imgdiv img{
@@ -150,10 +188,33 @@ h2{
     height: auto; /* Maintains aspect ratio */
 
 }
+
+
 .imggroup.long{
-    width: 300px;
+    color: black;
+    text-align: left;
+    width: 600px;
+}
+/*Controls the aesthetics of all links*/
+.links a{ 
+    display:block;
+    background-color: rgba(0, 114, 153, 1);
+    color: rgba(249, 249, 249, 1);
+    border-color: rgba(0, 114, 153, 1);
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 15px;
+    width: 250px;
+    box-shadow: inset 1px 1px 0;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    justify-content: center;
 }
 
+/*targets all img but not vids*/
 .imgdiv
 {
     /* background-color: red; */
@@ -173,26 +234,20 @@ div.imgwrapper{
 }
 div.video iframe
 {
-    width: 300px;
+    width: 600px;
     height: 400px;
 }
+
 div.imgdiv{
     display: flex;
     justify-content: center;
 
-}
-    
+}    
 
 #dolly{
     gap:10px;
 }
 
-#imgwrapper
-{
-    background-color: aquamarine;
-    
-
-}
 
 div.imgwrapper div.links ul 
 {
@@ -210,16 +265,12 @@ div li
 
  #programs
 {
-    
     display: flex;
     flex-direction: column;
-
     gap:50px;
     text-align: left;
-    background-color: aliceblue;
-
-
 }
+
 /* 
 #ready4k{
     width:40%
@@ -238,25 +289,60 @@ div li
     width: 500px;
 
 }
+
 #kids-and-parents
 {
-    
     display: table;
-    
     gap:50px;
     text-align: center;
+    color:black;
     /* background-color: wheat ; */
-    
 }
 
 
 
 #kidAdventures{
-    display: flex;
-    
-   
+    display: flex;   
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: left;
 
+}
+
+/*home pg*/
+section#mission p:last-child{
+    text-align: center;
+    color:rgba(0, 114, 153, 1);
+    font-weight: bold;
+}
+section{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+section p{
+    font-size: 16px;
+    text-align: left;
+
+}
+section#funding{
+    text-align: left;
+    font-weight: lighter;
+}
+section#funding p:last-child, 
+section#funding p:nth-last-child(2), 
+section#funding p:nth-last-child(5){
+    margin-top: 0px;
+    font-weight: bold;
+}
+section#funding p:nth-last-child(2)
+{
+    margin-bottom: 0px;
+}
+
+h3, address{
+    font-weight: lighter;
+    color: black;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 0px;
 }
