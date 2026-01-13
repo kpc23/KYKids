@@ -3,9 +3,20 @@ html{
     /* aided with ensuring the body and header aligned with windows borders and
     there was a right-sided gap that revealed the underlying hear image.*/
 }
+
+
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
     display: flex;
-    background-color: white;
+    background-color: lightslategray;
     background-position: center center;
     flex-direction: column;
     background-image: url("/imgs/HeartofKYWebLogo.jpg");
@@ -22,6 +33,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Essential for predictable sizing */
+    background-blend-mode: multiply;
 }
 
 body *
@@ -42,6 +54,7 @@ header{
     display: block;
     width: 100%;
     padding-bottom:200px;
+    
 
 }
 
@@ -49,14 +62,20 @@ h1.title{
     display: flex;
     color: white;
     justify-content: center;
+    text-wrap: wrap;
     font-size: 40pt;
     padding-top:200px;
+    text-align: center;
+    /* width:475px; */
 }
+
+
 h1{
     font-family: "Rock Salt", cursive;
     font-weight: 400;
     font-style: normal;
 }
+
 
 nav{
     background-color: rgba(28, 28, 28, 1);
@@ -68,7 +87,6 @@ nav{
     width: 100%;
     justify-content: end;
 }
-
 
 /*
 links for navigation bar are white
@@ -137,12 +155,27 @@ a.social:first-child{
 /*Logo for insta*/
 a.social:last-child{
     display: flex;
-    background-color: #fe005c;;
+    text-align: center;
+    background-color: #fe005c;
     border-radius: 100%;
     width: 44px;
     height: 44px;
     margin:2px;
 }
+
+div#inspiration p
+{
+
+width:50%;
+font-size: 24pt;
+line-height: 1.5;
+font-family: "Raleway";
+/* Font is actually Raleway on main site */
+font-weight: 600;
+font-style: normal;
+}
+
+
 
 main{
     display: flex;
@@ -179,8 +212,9 @@ div{
 /*Activies page - Note <p> below Dolly's section*/
 .note{
     text-align: left;
-    font-size: 22px;
+    font-size: 30px;
     color: rgba(0, 114, 153, 1);
+    
 }
 
 .imgdiv img{
@@ -220,7 +254,7 @@ div{
 /*targets all img but not vids*/
 .imgdiv
 {
-    /* background-color: red; */
+    
     display: flex;
     
 }
