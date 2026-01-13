@@ -1,0 +1,502 @@
+html{
+    overflow-x: hidden; /* Hides horizontal scrollbar if content is slightly too wide */
+    /* aided with ensuring the body and header aligned with windows borders and
+    there was a right-sided gap that revealed the underlying hear image.*/
+}
+
+
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    display: flex;
+    background-color: lightslategray;
+    background-position: center center;
+    flex-direction: column;
+    background-image: url("/imgs/HeartofKYWebLogo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    flex-wrap: wrap;
+    transform:translate3d(0,0,0);
+    background-attachment: fixed;
+    box-sizing: border-box;
+    /* width: 600px; */
+        width: 100%; /* Default to full width */
+    overflow-x: hidden; /* Hides horizontal scrollbar if content is slightly too wide */
+    min-height: 100vh; /* Ensures the body is at least as tall as the window, but grows with content */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Essential for predictable sizing */
+    background-blend-mode: multiply;
+}
+
+body *
+{
+    border:1px solid transparent; 
+}
+
+.logo{
+    display:none;
+    opacity: 0%;
+}
+
+html{
+    font-size: 16pt;
+    font-family: sans-serif;
+}
+header{
+    display: block;
+    width: 100%;
+    padding-bottom:200px;
+    
+
+}
+
+h1.title{
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-wrap: wrap;
+    font-size: 40pt;
+    padding-top:200px;
+    text-align: center;
+    /* width:475px; */
+}
+
+
+h1{
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+nav{
+    background-color: rgba(28, 28, 28, 1);
+    display: flex;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    text-align: right;
+    width: 100%;
+    justify-content: end;
+}
+
+/*
+links for navigation bar are white
+*/
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+
+nav li{
+    display: table;
+    padding-left:16px;
+    padding-right:10px;
+}
+
+/******Home pg note at start******/
+div#inspiration{
+    display: flex; 
+    justify-content: center;
+}
+div#inspiration p{
+    color: rgba(0, 114, 153, 1);
+    font-weight: bold;
+    text-align: center;
+    width: 500px;
+}
+/**********************************/
+
+/*<p> alignment/color*/
+p{
+    color: black;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 14pt;
+    line-height: 1.5;
+
+}
+
+/*links within <p>*/
+p a{
+    color: rgba(0, 114, 153, 1);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between; 
+}
+
+aside{
+    display: flex;
+    padding-top:1.5rem;
+    background-color: white;
+    justify-content: center;
+}
+
+/*Logo for fb*/
+a.social:first-child{
+    display: flex;
+    background-color: #1877f2;
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+    margin:2px;
+}
+/*Logo for insta*/
+a.social:last-child{
+    display: flex;
+    text-align: center;
+    background-color: #fe005c;
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+    margin:2px;
+}
+
+div#inspiration p
+{
+
+width:50%;
+font-size: 24pt;
+line-height: 1.5;
+font-family: "Raleway";
+/* Font is actually Raleway on main site */
+font-weight: 600;
+font-style: normal;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    color:rgba(0, 114, 153, 1);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    background-color: white;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* main *{
+    
+    text-align: center;
+} */
+
+/*Realigning headers of subsections/body to be left and adjust font size.*/
+h2{
+    color:rgba(0, 114, 153, 1);
+    text-align: left;
+    line-height: 1.5;
+    font-size: 20pt;
+}
+div{
+        color:black;
+
+}
+
+/*Activies page - Note <p> below Dolly's section*/
+.note{
+    text-align: left;
+    font-size: 30px;
+    color: rgba(0, 114, 153, 1);
+    
+}
+
+.imgdiv img{
+    width: 300px;    
+    height: auto; /* Maintains aspect ratio */
+
+}
+
+
+.imggroup.long{
+    color: black;
+    text-align: left;
+    width: 600px;
+}
+/*Controls the aesthetics of all links in specific pages only*/
+#childcare .links a, 
+#support .links a, 
+#activities .links a
+{ 
+    display:block;
+    background-color: rgba(0, 114, 153, 1);
+    color: rgba(249, 249, 249, 1);
+    border-color: rgba(0, 114, 153, 1);
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 15px;
+    width: 250px;
+    box-shadow: inset 1px 1px 0;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+/*targets all img but not vids*/
+.imgdiv
+{
+    
+    display: flex;
+    
+}
+
+div.imgwrapper{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 200%;
+   
+
+}
+div.video iframe
+{
+    width: 600px;
+    height: 400px;
+}
+
+div.imgdiv{
+    display: flex;
+    justify-content: center;
+
+}    
+
+#dolly{
+    gap:10px;
+}
+
+
+div.imgwrapper div.links ul 
+{
+
+    display: inline-block;
+    text-decoration: none;
+}
+
+div li 
+{   
+    display: flex;
+    text-decoration: none;
+    padding-bottom:10px;
+}
+
+ #programs
+{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    text-align: left;
+}
+
+.imggroup.short{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 500px;
+
+}
+
+#kids-and-parents
+{
+    display: table;
+    gap:50px;
+    text-align: center;
+    color:black;
+}
+
+#kidAdventures{
+    display: flex;   
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+/*home pg*/
+section#mission p:last-child{
+    text-align: center;
+    color:rgba(0, 114, 153, 1);
+    font-weight: bold;
+}
+section{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+section#funding{
+    text-align: left;
+    font-weight: lighter;
+}
+section#funding p:last-child, 
+section#funding p:nth-last-child(2), 
+section#funding p:nth-last-child(5){
+    margin-top: 0px;
+    font-weight: bold;
+}
+section#funding p:nth-last-child(2)
+{
+    margin-bottom: 0px;
+}
+
+h3, address{
+    font-weight: lighter;
+    color: black;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+/**** CHILDCARE PAGE ******/
+
+#childcare.h2
+{
+   font-size: 20pt;
+}
+#childcare li a
+{
+    justify-content: center;
+}
+
+#childcare div.imgwrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    justify-content: left;
+}
+
+#whyChildcare 
+{
+display: flex;
+width:100%;
+gap: 20px;
+align-items: center;
+}
+
+#choseChildcare 
+{
+display: flex;
+width:100%;
+gap: 20px;
+align-items: center;
+}
+
+#childcareBenefits 
+
+{
+display: flex;
+width:100%;
+gap: 20px;
+align-items: center;
+}
+/**********END CHILDCARE PAGE**********************/
+
+/******** ConcernsPageWork ********/
+/* This controls that list under the What do i do caption */
+
+body#concerns{
+    font-size: 14pt;
+    line-height: 1.5;
+
+}
+body#concerns main section ul
+{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fe005c; */
+    text-align: left;
+    text-wrap: wrap;
+    list-style: square;
+    color: black;
+    font-weight: lighter;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+body#concerns main section p:nth-last-child(1) {
+    font-weight: bold;
+    padding: 0 10px; /* Space between content and line */
+    border-bottom: 2px solid lightgrey; /* The divider line */
+
+}
+body#concerns main section ul a{
+    color:rgba(0, 114, 153, 1);
+    font-size: 14pt;
+}
+body#concerns main section p:nth-last-child(1) strong{
+    font-weight: normal;
+}
+section#AddressConcerns div#age03.imggroup.long div p{
+    font-weight: normal;}
+
+section#AddressConcerns img{
+    width: 100%
+}
+section#AddressConcerns h2{
+    color:rgba(0, 114, 153, 1);
+    width: 28%;
+    text-align: center;
+}
+section#AddressConcerns a{
+    display:flex;
+    justify-content: center;
+}
+section#AddressConcerns div.phone a{
+    color:black;
+    font-size: 14pt;
+    text-decoration: none;
+}
+section#AddressConcerns div p{
+    font-size: 14pt;
+    text-align: center;
+}
+section#AddressConcerns div.phone{
+    display: flex;
+    gap:10px;
+    font-size: 14pt;
+    justify-content: center;
+    font-weight: normal;
+}
+section#AddressConcerns{
+    margin-bottom:24px;
+}
+/*************************************/
+
+/***************Preschool*************/
+
+body#preschool .imggroup.short p{
+    text-align: center;
+}
+body#preschool .imggroup.short .links a{
+    color:rgba(0, 114, 153, 1);
+    font-weight: normal;
+
+}
+body#preschool .imggroup.short div.phone a{
+    color:black;
+    text-decoration: none;
+    font-weight: normal;
+}
+/************End of Pre-S pg************/
