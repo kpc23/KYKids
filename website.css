@@ -195,8 +195,11 @@ div{
     text-align: left;
     width: 600px;
 }
-/*Controls the aesthetics of all links*/
-.links a{ 
+/*Controls the aesthetics of all links in specific pages only*/
+#childcare .links a, 
+#support .links a, 
+#activities .links a, 
+#preschool .links a{ 
     display:block;
     background-color: rgba(0, 114, 153, 1);
     color: rgba(249, 249, 249, 1);
@@ -347,10 +350,6 @@ h3, address{
     margin-bottom: 0px;
 }
 
-
-
-
-
 /*Childcare Page*/
 #childcare div.imgwrapper
 {
@@ -361,8 +360,6 @@ h3, address{
     justify-content: left;
 }
 
-
-
 #whyChildcare 
 {
 display: flex;
@@ -370,7 +367,6 @@ width:100%;
 gap: 20px;
 align-items: center;
 }
-
 
 #choseChildcare 
 {
@@ -380,8 +376,6 @@ gap: 20px;
 align-items: center;
 }
 
-
-
 #childcareBenefits 
 
 {
@@ -389,4 +383,75 @@ display: flex;
 width:100%;
 gap: 20px;
 align-items: center;
+}
+/********************************/
+
+/* ConcernsPageWork */
+/* This controls that list under the What do i do caption */
+body#concerns{
+    font-size: 14pt;
+    line-height: 1.5;
+
+}
+body#concerns main section ul
+{
+display: flex;
+flex-direction: column;
+/* background-color: #fe005c; */
+text-align: left;
+text-wrap: wrap;
+list-style: square;
+color: black;
+font-weight: lighter;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+}
+
+body#concerns main section p:nth-last-child(1) {
+    font-weight: bold;
+    padding: 0 10px; /* Space between content and line */
+    border-bottom: 2px solid lightgrey; /* The divider line */
+
+}
+body#concerns main section ul a{
+    color:rgba(0, 114, 153, 1);
+    font-size: 14pt;
+}
+body#concerns main section p:nth-last-child(1) strong{
+    font-weight: normal;
+}
+section#AddressConcerns div#age03.imggroup.long div p{
+    font-weight: normal;}
+
+section#AddressConcerns img{
+    width: 100%
+}
+section#AddressConcerns h2{
+    color:rgba(0, 114, 153, 1);
+    width: 28%;
+    text-align: center;
+}
+section#AddressConcerns a{
+    display:flex;
+    justify-content: center;
+}
+section#AddressConcerns div.phone a{
+    color:black;
+    font-size: 14pt;
+    text-decoration: none;
+
+}
+section#AddressConcerns div p{
+    font-size: 14pt;
+    text-align: center;
+}
+section#AddressConcerns div.phone{
+    display: flex;
+    gap:10px;
+    font-size: 14pt;
+    justify-content: center;
+    font-weight: normal;
+}
+section#AddressConcerns{
+    margin-bottom:24px;
 }
