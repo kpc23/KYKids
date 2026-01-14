@@ -466,6 +466,7 @@ h3, address{
     text-align: center;
     font-family:sans-serif;
     color: darkblue;
+    justify-content: center;
 }
 
 div#headStartPre.imggroup.short, 
