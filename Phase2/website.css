@@ -451,10 +451,13 @@ h3, address{
     background-blend-mode: soft-light;
 }
 #home div#inspiration p{
+    display: flex;
+    align-items: center;
     background-image: url("/Phase2/imgs/hpyKids.jpeg");
     border-bottom: 10px dotted darkslateblue;
     background-color: #cccccc; /* Fallback color */
     background-repeat: no-repeat;
+    height: 300px;
     background-position: center;
     background-size: cover;
     background-blend-mode: soft-light;
@@ -464,6 +467,7 @@ h3, address{
     font-family:sans-serif;
     color: darkblue;
 }
+
 div#headStartPre.imggroup.short, 
 div#Boyle.imggroup.short,
 div#Burgin.imggroup.short,
