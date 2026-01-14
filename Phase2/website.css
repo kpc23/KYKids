@@ -47,8 +47,9 @@ body *
 }
 
 html{
-    font-size: 16pt;
-    font-family: sans-serif;
+    font-size: 20pt;
+    line-height: 2;
+    font-family: Verdana;
 }
 header{
     display: block;
@@ -70,6 +71,7 @@ h1.title{
 }
 
 
+
 h1{
     font-family: "Rock Salt", cursive;
     font-weight: 400;
@@ -78,7 +80,7 @@ h1{
 
 
 nav{
-    background-color: rgba(28, 28, 28, 1);
+    background-color: rgb(30, 35, 70);
     display: flex;
     position: fixed;
     top:0px;
@@ -109,7 +111,7 @@ div#inspiration{
     justify-content: center;
 }
 div#inspiration p{
-    color: rgba(0, 114, 153, 1);
+    color:rgb(133, 60, 60);
     font-weight: bold;
     text-align: center;
     width: 500px;
@@ -118,17 +120,17 @@ div#inspiration p{
 
 /*<p> alignment/color*/
 p{
-    color: black;
+    color: rgb(30, 35, 70);
     text-align: left;
     font-weight: lighter;
-    font-size: 14pt;
+    font-size: 20pt;
     line-height: 1.5;
 
 }
 
 /*links within <p>*/
 p a{
-    color: rgba(0, 114, 153, 1);
+    color: rgb(30, 35, 70);
 }
 ul{
     display: flex;
@@ -139,14 +141,14 @@ ul{
 aside{
     display: flex;
     padding-top:1.5rem;
-    background-color: white;
+    background-color:rgb(160, 200, 225);
     justify-content: center;
 }
 
 /*Logo for fb*/
 a.social:first-child{
     display: flex;
-    background-color: #1877f2;
+    background-color: #3585ed;
     border-radius: 100%;
     width: 44px;
     height: 44px;
@@ -156,7 +158,7 @@ a.social:first-child{
 a.social:last-child{
     display: flex;
     text-align: center;
-    background-color: #fe005c;
+    background-color: #f8448f;
     border-radius: 100%;
     width: 44px;
     height: 44px;
@@ -165,33 +167,72 @@ a.social:last-child{
 
 div#inspiration p
 {
-
+color: rgb(83, 30, 1);
+/* -webkit-text-stroke-width: 1px ;
+-webkit-text-stroke-color: #eea175 ; */
 width:50%;
 font-size: 24pt;
 line-height: 1.5;
-font-family: "Raleway";
+font-family:Georgia, 'Times New Roman', Times, serif;
 /* Font is actually Raleway on main site */
 font-weight: 600;
 font-style: normal;
 }
 
+img 
+{
+border-radius: 20px;
+border:3px solid rgb(133, 177, 205);
 
+}
 
 main{
     display: flex;
     flex-direction: column;
-    color:rgba(0, 114, 153, 1);
-    font-family: sans-serif;
+    color: rgb(30, 35, 70);
+    font-family:Verdana;
+     line-height: 2;
     font-weight: 600;
     font-style: normal;
     font-variant: normal;
-    background-color: white;
+    background-color: rgb(160, 200, 225);
     text-align: center;
     flex-wrap: wrap;
 }
 
+#funding
+{
+align-self: center;
+width: 90%;
+background-color: rgb(247, 192, 157);
+border-radius: 20px;
+border:4px dotted white;
 
 
+
+}
+#funding h2
+{
+    color:rgb(133, 60, 60);
+   text-align: center;
+
+}
+
+
+#mission
+{
+    background-color: #8795c5;
+    border-radius: 20px;
+    border:4px dotted rgb(0, 0, 0);
+    width: 40%;
+    align-self: center;
+
+}
+#mission p{ text-align: center;}
+
+#mission h2{color: rgb(18, 20, 40);
+text-align: center;
+text-decoration: underline;}
 /* main *{
     
     text-align: center;
@@ -199,10 +240,10 @@ main{
 
 /*Realigning headers of subsections/body to be left and adjust font size.*/
 h2{
-    color:rgba(0, 114, 153, 1);
+    color:rgb(0, 0, 0);
     text-align: left;
     line-height: 1.5;
-    font-size: 20pt;
+    font-size: 24pt;
 }
 div{
         color:black;
@@ -213,7 +254,7 @@ div{
 .note{
     text-align: left;
     font-size: 30px;
-    color: rgba(0, 114, 153, 1);
+    color: rgb(30, 35, 70);
     
 }
 
@@ -225,19 +266,20 @@ div{
 
 
 .imggroup.long{
-    color: black;
+    color: rgb(30, 35, 70);
     text-align: left;
     width: 600px;
 }
 /*Controls the aesthetics of all links in specific pages only*/
 #childcare .links a, 
 #support .links a, 
-#activities .links a
+#activities .links a,
+#preschool .links a
 { 
     display:block;
-    background-color: rgba(0, 114, 153, 1);
-    color: rgba(249, 249, 249, 1);
-    border-color: rgba(0, 114, 153, 1);
+    background-color: rgb(80, 67, 140);
+    color: rgb(255, 235, 209);
+    border-color: black;
     cursor: pointer;
     border-radius: 4px;
     margin: 10px 0;
@@ -245,6 +287,7 @@ div{
     width: 250px;
     box-shadow: inset 1px 1px 0;
     text-decoration: none;
+    text-align: center;
 }
 .links{
     display: flex;
@@ -322,7 +365,7 @@ div li
     display: table;
     gap:50px;
     text-align: center;
-    color:black;
+    color: rgb(30, 35, 70);
 }
 
 #kidAdventures{
@@ -336,7 +379,7 @@ div li
 /*home pg*/
 section#mission p:last-child{
     text-align: center;
-    color:rgba(0, 114, 153, 1);
+    color: rgb(30, 35, 70);
     font-weight: bold;
 }
 section{
@@ -361,9 +404,9 @@ section#funding p:nth-last-child(2)
 
 h3, address{
     font-weight: lighter;
-    color: black;
+    color: rgb(30, 35, 70);
     font-style: normal;
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 0px;
 }
 
@@ -417,7 +460,7 @@ align-items: center;
 /* This controls that list under the What do i do caption */
 
 body#concerns{
-    font-size: 14pt;
+    font-size: 20pt;
     line-height: 1.5;
 
 }
@@ -429,7 +472,7 @@ body#concerns main section ul
     text-align: left;
     text-wrap: wrap;
     list-style: square;
-    color: black;
+    color: rgb(30, 35, 70);
     font-weight: lighter;
     padding-left: 2.5%;
     padding-right: 2.5%;
@@ -442,8 +485,9 @@ body#concerns main section p:nth-last-child(1) {
 
 }
 body#concerns main section ul a{
-    color:rgba(0, 114, 153, 1);
-    font-size: 14pt;
+    color: rgb(30, 35, 70);
+    font-size: 20pt;
+
 }
 body#concerns main section p:nth-last-child(1) strong{
     font-weight: normal;
@@ -455,7 +499,7 @@ section#AddressConcerns img{
     width: 100%
 }
 section#AddressConcerns h2{
-    color:rgba(0, 114, 153, 1);
+    color: rgb(30, 35, 70);
     width: 28%;
     text-align: center;
 }
@@ -464,18 +508,18 @@ section#AddressConcerns a{
     justify-content: center;
 }
 section#AddressConcerns div.phone a{
-    color:black;
-    font-size: 14pt;
+    color: rgb(30, 35, 70);
+    font-size: 20pt;
     text-decoration: none;
 }
 section#AddressConcerns div p{
-    font-size: 14pt;
+    font-size: 20pt;
     text-align: center;
 }
 section#AddressConcerns div.phone{
     display: flex;
     gap:10px;
-    font-size: 14pt;
+    font-size: 20pt;
     justify-content: center;
     font-weight: normal;
 }
@@ -490,12 +534,11 @@ body#preschool .imggroup.short p{
     text-align: center;
 }
 body#preschool .imggroup.short .links a{
-    color:rgba(0, 114, 153, 1);
     font-weight: normal;
 
 }
 body#preschool .imggroup.short div.phone a{
-    color:black;
+    color: rgb(30, 35, 70);
     text-decoration: none;
     font-weight: normal;
 }
