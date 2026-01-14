@@ -64,7 +64,6 @@ h1.title{
     justify-content: center;
     text-wrap: wrap;
     font-size: 40pt;
-    padding-top:200px;
     text-align: center;
     /* width:475px; */
 }
@@ -81,19 +80,19 @@ h1{
 nav{
     background-color: rgb(30, 35, 70);
     display: flex;
-    position: fixed;
+    /* position: fixed;
     top:0px;
     left: 0px;
     text-align: right;
     width: 100%;
-    justify-content: end;
+    justify-content: end; */
 
-        /* position: sticky;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-    pointer-events: none; */
+    pointer-events: none;
 
 }
 
@@ -102,7 +101,7 @@ links for navigation bar are white
 */
 nav a{
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -258,26 +257,6 @@ div{
 }
 
 /*Activies page - Note <p> below Dolly's section*/
-#activities section#programs, #support section#newParents{
-    background-color: rgb(146, 191, 220);
-    border-radius: 50px;
-}
-#activities section#AtHome,  #support section#theraphy{
-    background-color: rgb(128, 175, 206);
-    border-radius: 50px;
-}
-#activities section#kids-and-parents,  #support section#caregivers{
-    background-color: rgb(114, 156, 184);
-    border-radius: 50px;
-}
-#activities section#kidAdventues{
-    background-color: rgb(98, 155, 193);
-    border-radius: 50px;
-}
-
-#home section#members h2{
-    font-size: 55pt;
-}
 .note{
     text-align: left;
     font-size: 30px;
@@ -313,7 +292,7 @@ div{
     padding: 15px;
     width: 250px;
     box-shadow: inset 1px 1px 0;
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
 }
 .links{
@@ -322,10 +301,11 @@ div{
 }
 
 /*targets all img but not vids*/
-.imgdiv img
+.imgdiv
 {
+    
     display: flex;
-    background-color: lightgrey;
+    
 }
 
 div.imgwrapper{
@@ -437,65 +417,7 @@ h3, address{
 }
 
 /**** CHILDCARE PAGE ******/
-#childcare div h2{
-    background-color: lightslategray;
-    border-radius: 20px;;
-    background-image: url("/Phase2/imgs/heart3.png");
-    background-color: #cccccc; /* Fallback color */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; /* Parallax effect */
-    text-align: center;
-    color: darkred;
-    background-blend-mode: soft-light;
-}
-#home div#inspiration p{
-    background-image: url("/Phase2/imgs/hpyKids.jpeg");
-    border-bottom: 10px dotted darkslateblue;
-    background-color: #cccccc; /* Fallback color */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: soft-light;
-    width: 100%;
-    background-attachment: fixed; /* Parallax effect */
-    text-align: center;
-    font-family:sans-serif;
-    color: darkblue;
-}
-div#headStartPre.imggroup.short, 
-div#Boyle.imggroup.short,
-div#Burgin.imggroup.short,
-div#Danville.imggroup.short,
-div#Mercer.imggroup.short{
-    background-color: rgb(189, 189, 255);
-        border: 10px outset rgb(105, 105, 171);
-}
 
-div#KYHands.imggroup.short,
-div#Haven.imggroup.short,
-div#Ephraim.imggroup.short,
-div#firststeps.imggroup.short,
-div#KidsCanDo.imggroup.short,
-div#HeadStart.imggroup.short,
-div#vips.imggroup.short,
-div#KCDHH.imggroup.short,
-div#KYACA.imggroup.short,
-div#KYSpin.imggroup.short,
-div#OSCHCN.imggroup.short,
-div#MOPS.imggroup.short
-{
-    background-color: rgb(232, 165, 165);
-    border: 10px outset rgb(171, 105, 105);
-
-}
-#concerns h2, #preschool h2, #support h2{
-   font-size: 40pt;
-}
-#concerns p{
-    font-size: 30pt;;
-}
 #childcare.h2
 {
    font-size: 20pt;
